@@ -1,0 +1,64 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  padding: 40px 20px;
+}.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  margin-bottom: 15px;
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+
+
+.hero h1 {
+  font-size: 28px;
+}
+
+.hero p {
+  color: #94a3b8;
+}
+
+/* CARD SECTIONS */
+.card {
+  background: #1e293b;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card li {
+  padding: 5px 0;
+}
+
+/* FOOTER */
+footer {
+  margin: 20px;
+  color: #94a3b8;
+}
