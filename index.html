@@ -3,59 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rahul Ray Portfolio</title>
+  <title>Rahul Ray</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <img src="profile.jpg" alt="Rahul Ray" class="profile">
-    <h1>Rahul Ray</h1>
-    <p>CSE Student | Aspiring Web Developer</p>
-  </section>
+<!-- PARTICLE BACKGROUND -->
+<canvas id="bg"></canvas>
 
-  <!-- ABOUT -->
-  <section class="card">
-    <h2>About Me</h2>
-    <p>
-      I am a Computer Science student focused on Data Structures and Web Development.
-      Currently building skills in JavaScript and problem solving.
-    </p>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <img src="profile.jpg" class="profile">
 
-  <!-- SKILLS -->
-  <section class="card">
-    <h2>Skills</h2>
-    <ul>
-      <li>C</li>
-      <li>C++</li>
-      <li>Data Structures & Algorithms</li>
-      <li>JavaScript</li>
-      <li>HTML & CSS</li>
-    </ul>
-  </section>
+  <h1 id="typing"></h1>
+  <p>CSE Student | Web Developer</p>
 
-  <!-- PROJECTS -->
-  <section class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li>Simple Calculator (JavaScript)</li>
-      <li>To-Do List App</li>
-      <li>Portfolio Website</li>
-    </ul>
-  </section>
+  <button class="btn" onclick="scrollToProjects()">View My Work</button>
+</section>
 
-  <!-- CONTACT -->
-  <section class="card">
-    <h2>Contact</h2>
-    <p>Email: rahulraydev03@gmail.com</p>
-  </section>
+<!-- ABOUT -->
+<section class="card hidden">
+  <h2>About Me</h2>
+  <p>I build web apps and practice DSA.</p>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Rahul Ray</p>
-  </footer>
+<!-- SKILLS -->
+<section class="card hidden">
+  <h2>Skills</h2>
+  <ul>
+    <li>C</li>
+    <li>C++</li>
+    <li>DSA</li>
+    <li>JavaScript</li>
+    <li>HTML & CSS</li>
+  </ul>
+</section>
 
+<!-- PROJECTS -->
+<section class="card hidden" id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Calculator</h3>
+    <p>JS calculator</p>
+  </div>
+
+  <div class="project">
+    <h3>Todo App</h3>
+    <p>Task manager</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="card hidden">
+  <h2>Contact</h2>
+  <p>Email: rahulraydev03@gmail.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© <span id="year"></span> Rahul Ray</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
